@@ -221,9 +221,9 @@ Fonts from Google Fonts
 
     win: function(){
       var rating = this.rating();
-      this.msgTitle.html("Awesome!, you cracked the question");
+      this.msgTitle.html("كفو! خلصتي اللعبة! ثقتك في محلها يا ملاكي");
       // this is messy
-      this.msgText.html("Now you are going to experience 3rd Dimension Space :p");
+      this.msgText.html("الحين بتنتقلين للصفحة الأخيره عيشي التجربه");
       this.showMsg();
 
     },
@@ -237,7 +237,7 @@ Fonts from Google Fonts
 
   };
 
-  var wordList = ["SWEETY"];
+  var wordList = ["ARYAM"];
 
   Hangman.init(wordList);
 

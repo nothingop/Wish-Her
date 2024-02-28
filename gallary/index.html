@@ -69,6 +69,8 @@ body {
 		<!-- Okay, so you can add upto 6 images here, make sure it should be in 16:9 ratio for best view -->
 		
 		<!-- cube images -->
+		<audio id="audio" src="../aryam.mp3" preload="auto" allow="autoplay"></audio>
+
 		<img id="1" src="wallpaper-377921-c.jpg" class='face' data-transform="translateZ(-400px)" style="outline:none !important">
 		<img id="2" src="2.jpg" class='face' data-transform="rotateY(90deg) translateZ(-400px)">
 		<img id="3" src="3.jpg"  class='face' data-transform="rotateY(-90deg) translateZ(-400px)">
@@ -303,8 +305,15 @@ body {
 		requestAnimationFrame(run); 
 		camera.move();
 	}
+	
 	run();
 }();
 //# sourceURL=pen.js
 </script>
+<script>
+    window.onload = function () {
+      var audio = document.getElementById("audio");
+      audio.play();
+    };
+  </script>
 </body></html>

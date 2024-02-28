@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Her_Name</title> <!-- this text can be edited -->
-
-
-
-      <link rel="stylesheet" href="css/style.css">
-
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="background"></div>
-<h1>
-  <div class="underlay"></div>
-  <span class="initial">
-    <span>Your</span>
-    <span>smile is wonder</span>
-  </span>
-  <span class="final">
-    <span>We will</span>
-    <span>never let it fade</span>
-  </span>
-</h1>
+  <h1>
+    <div class="underlay"></div>
+    <span class="initial">
+      <span>تصنع يومي</span>
+      <span>ابتسامتك</span>
+    </span>
+    <span class="final">
+      <span>We will</span>
+      <span>never let it fade</span>
+    </span>
+  </h1>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+  <style>
+    /* تجعل النص العربي بدون مسافات */
+    body {
+      letter-spacing: 0;
+    }
 
-    <script src="js/index.js"></script>
-    <style>
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Adjust vertical alignment */
+      margin-top: 500px; /* Add margin to move it down */
+    }
+
     .button {
       display: inline-block;
       border-radius: 4px;
-      background-color: #808080;
+      background-color: #a755bb;
       border: none;
-      color: #FFFFFF;
+      color: #000000;
       text-align: center;
       font-size: 28px;
       padding: 20px;
@@ -67,12 +73,10 @@
       opacity: 1;
       right: 0;
     }
-    </style>
-    <div align="right">
-    <h2>CLICK BELOW --</h2>
-
-    <button class="button" style="vertical-align:middle"><span><a href="/Wish-Her/challange">NEXT</a></span></button> <!-- change domain here -->
-    </div>
-	<body oncontextmenu="return false"></body>
+  </style>
+  <div class="button-container">
+    <button class="button"><span><a href="/challange">التالي</a></span></button> <!-- change domain here -->
+  </div>
+  <body oncontextmenu="return false"></body>
 </body>
 </html>

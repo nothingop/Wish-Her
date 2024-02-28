@@ -1,51 +1,85 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Happy birthday ${name}!</title>
+  <title>Happy birthday Aryam!</title>
+  <style>
+    /* Styles for body and container */
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #222;
+    }
+    
+    #container {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #eee;
+      font-family: Verdana, sans-serif;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
 
+    /* Keyframe animation for fading in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
 
+    /* Styles for the birthday message */
+    p {
+      margin: 0;
+      font-size: 24px;
+      animation: slideIn 1s ease forwards;
+    }
 
-      <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      canvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-p {
-	margin: 0 0;
-	position: absolute;
-	font: 16px Verdana;
-	color: #eee;
-	height: 25px;
-	top: calc( 100vh - 30px );
-	text-shadow: 0 0 2px white;
-}
-p a {
-	text-decoration: none;
-	color: #aaa;
-}
-span {
-	font-size: 25px;
-}
-p > a:first-of-type {
-	font-size: 20px;
-}
-body {
-	overflow: hidden;
-}
-    </style>
+    span {
+      font-size: 32px;
+      display: block;
+      margin-top: 20px;
+      transition: color 0.3s ease;
+    }
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    a {
+      text-decoration: none;
+      color: #aaa;
+      transition: color 0.3s ease;
+    }
 
+    a:hover {
+      color: #fff;
+    }
+
+    /* Keyframe animation for sliding in */
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <canvas id=c></canvas>
-<p>Heartiest Wishes from__ <a href="../game">${Sender Name}</a> <span><a href="../game">=============> CLICK HERE <=============</a></span> </p>
-
-    <script src="js/index.js"></script>
-<body oncontextmenu="return false"></body>
+  <div id="container">
+    <p>من أكثر شخص يحبك, إلى شخص ملك كل شيء فيني</p>
+    <a href="../game">=============> اضغطي هنا <=============</a>
+  </div>
+  <canvas id="c"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
